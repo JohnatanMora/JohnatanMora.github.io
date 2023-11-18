@@ -10,6 +10,7 @@
             margin: 20px;
             background-color: #ebebeb;
             color: #333;
+            overflow-x: hidden; /* Para ocultar la barra de desplazamiento horizontal cuando se muestra el menú lateral */
         }
 
         header {
@@ -40,6 +41,41 @@
             background-color: #555;
         }
 
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 16px;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
         h1, h2, h3 {
             color: #333;
         }
@@ -68,9 +104,26 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Estilo para el botón del menú lateral */
+        .menu-btn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
+
+    <button class="menu-btn" onclick="toggleNav()">☰ Menú</button>
 
     <header>
         <h1>Johnatan</h1>
@@ -87,6 +140,19 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#contacto">Contacto</a>
     </nav>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobremi">Sobre Mí</a>
+        <a href="#formacion">Formación</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#aptitudes">Aptitudes</a>
+        <a href="#idiomas">Idiomas</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacto">Contacto</a>
+    </div>
 
     <section id="inicio">
         <h2>Inicio</h2>
@@ -127,5 +193,14 @@
         <p>Contacto: johnatan.mora@alu.uclm.es | Teléfono: 684 145 002</p>
     </footer>
 
+    <script>
+        function toggleNav() {
+            document.getElementById("mySidenav").style.width = (document.getElementById("mySidenav").style.width === "250px") ? "0" : "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
