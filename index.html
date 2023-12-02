@@ -122,6 +122,70 @@
             left: 10px;
             z-index: 2;
         }
+
+        /* Estilo adicional para el contenedor de la tarjeta */
+        .card-container {
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #bfefc1;
+            color:#333;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            width: calc(50% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilo adicional para la imagen en la tarjeta */
+        .card-img {
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            display: block; /* Añade display: block para eliminar el espacio adicional debajo de la imagen */
+        }
+
+        /* Estilo adicional para el contenido en la tarjeta */
+        .card-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .fila {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Estilo adicional para el título de la sección de formación */
+        #formacion h2 {
+            margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
+        }
+
+        #download-button {
+            display: inline-block;
+            margin-top: 10px; /* Ajusta este valor según tus necesidades */
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #download-button:hover {
+            background-color: #45a049;
+        }
+
     </style>
 </head>
 <body>
@@ -157,7 +221,10 @@
 
     <section id="inicio">
         <h2>Inicio</h2>
-        <!-- Contenido de la sección de inicio -->
+        <p>Johnatan Mora Pardo</p>
+        <p>Ingeniero Informático</p>
+        <p>Intensificación: Tecnologías de la Información</p>
+        <a id="download-button" href="curriculum.pdf" download="curriculum.pdf">Descargar Mi Curriculum</a>
     </section>
 
     <section id="sobremi">
@@ -177,12 +244,23 @@
 
     <section id="formacion">
         <h2>Formación</h2>
-        <div class="card">
-            <img src="ordenador_icono.png" alt="Ordenador">
-            <div class="card-content">
-                <i class="fas fa-desktop"></i>
-                <a href="https://esi.uclm.es/categories/plan-de-estudios">Grado en Ingeniería Informática</a>
-                <p><a href="https://esi.uclm.es/">Escuela Superior de Informática</a> de la <a href="https://www.uclm.es/">Universidad de Castilla La-Mancha</a></p>
+        <div class="fila">
+            <div class="card-container" name="Ingeniería">
+                <img class="card-img" src="ordenador_icono.png" alt="Informática">
+                <div class="card-content">
+                    <a href="https://esi.uclm.es/categories/plan-de-estudios">Grado en Ingeniería Informática</a>
+                    <p><a href="https://esi.uclm.es/">Escuela Superior de Informática</a> de la <a href="https://www.uclm.es/">Universidad de Castilla La-Mancha</a></p>
+                </div>
+            </div>
+            <div class="card-container" name="Idioma">
+                <img class="card-img" src="idioma_icono.png" alt="Idioma">
+                <div class="card-content">
+                    <a href="https://www.cambridgeenglish.org/">B1 Preliminary en Inglés</a>
+                    <p>
+                        Nivel B1 de inglés dentro del Marco Común Europeo de Referencia por 
+                        <a href="https://www.cambridgeenglish.org/">Cambridge English Assessment</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
