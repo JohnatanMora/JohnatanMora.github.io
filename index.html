@@ -298,5 +298,31 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+
+    <script>
+        // Obtener referencia al botón del menú y al menú desplegable
+        const toggleButton = document.getElementById('toggle-button');
+        const menu = document.getElementById('menu');
+
+        // Manejar clic en el botón del menú
+        toggleButton.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+
+        // Obtener referencias a los enlaces del menú
+        const menuLinks = document.querySelectorAll('#menu a');
+
+        // Manejar clic en los enlaces del menú
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('show');
+            });
+        });
+
+        // Manejar scroll para ocultar el menú
+        window.addEventListener('scroll', () => {
+            menu.classList.remove('show');
+        });
+    </script>
 </body>
 </html>
