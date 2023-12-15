@@ -3,228 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Presentación</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #ebebeb;
-            color: #333;
-            overflow-x: hidden; /* Para ocultar la barra de desplazamiento horizontal cuando se muestra el menú lateral */
-        }
-
-        header {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #333;
-            padding: 10px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #333;
-            overflow-x: hidden;
-            padding-top: 60px;
-            transition: 0.5s;
-        }
-
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 16px;
-            margin-right: 20px;
-            font-size: 20px;
-        }
-
-        h1, h2, h3 {
-            color: #333;
-        }
-
-        section {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: #4CAF50;
-        }
-
-        p {
-            color: #333;
-        }
-
-        pie {
-            color: #fff;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Estilo para el botón del menú lateral */
-        .menu-btn {
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 2;
-        }
-
-        /* Estilo adicional para el contenedor de la tarjeta */
-        .card-container {
-            border: 2px solid #333;
-            border-radius: 5px;
-            background-color: #bfefc1;
-            color:#333;
-            overflow: hidden;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 600px;
-            width: calc(50% - 20px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Estilo adicional para la imagen en la tarjeta */
-        .card-img {
-            margin-top: 10px;
-            width: 100px;
-            height: 100px;
-            display: block; /* Añade display: block para eliminar el espacio adicional debajo de la imagen */
-        }
-
-        /* Estilo adicional para el contenido en la tarjeta */
-        .card-content {
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .fila {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        /* Estilo adicional para el título de la sección de formación */
-        #formacion h2 {
-            margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
-        }
-
-        #download-button {
-            display: inline-block;
-            margin-top: 10px; /* Ajusta este valor según tus necesidades */
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #download-button:hover {
-            background-color: #45a049;
-        }
-
-    </style>
+    <title>Johnatan Mora Pardo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
 
-    <button id="toggle-button" class="menu-btn" onclick="toggleNav()">☰ Menú</button>
-
-    <header>
-        <h1>Johnatan</h1>
+    <!--header>
+        <h1>Johnatan Mora Pardo</h1>
         <p>Estudiante del Grado de Ingeniería Informática</p>
-    </header>
+    </header-->
 
-    <nav id="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobremi">Sobre Mí</a>
-        <a href="#formacion">Formación</a>
-        <a href="#conocimientos">Conocimientos</a>
-        <a href="#aptitudes">Aptitudes</a>
-        <a href="#idiomas">Idiomas</a>
-        <a href="#portfolio">Portfolio</a>
+
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formacion">Formación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conocimientos">Conocimientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Aptitudes">Aptitudes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Menú lateral -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#inicio" onclick="closeNav()">Inicio</a>
-        <a href="#sobremi" onclick="closeNav()">Sobre Mí</a>
-        <a href="#formacion" onclick="closeNav()">Formación</a>
-        <a href="#conocimientos" onclick="closeNav()">Conocimientos</a>
-        <a href="#aptitudes" onclick="closeNav()">Aptitudes</a>
-        <a href="#idiomas" onclick="closeNav()">Idiomas</a>
-        <a href="#portfolio" onclick="closeNav()">Portfolio</a>
-    </div>
-
-    <section id="inicio">
-        <h2>Inicio</h2>
+    <section id="inicio" class="mt-5">
         <p>Johnatan Mora Pardo</p>
         <p>Ingeniero Informático</p>
         <p>Intensificación: Tecnologías de la Información</p>
-        <a id="download-button" href="curriculum.pdf" download="curriculum.pdf">Descargar Mi Curriculum</a>
+        <p>¡Bienvenido a mi página! Soy Johnatan Mora Pardo, un apasionado estudiante de Ingeniería Informática en busca de oportunidades para aplicar mis conocimientos y habilidades en un entorno profesional. Estoy comprometido con el aprendizaje continuo y la resolución creativa de problemas. ¡Explora mi perfil y descarga mi currículum para conocer más sobre mí!</p>
+        <a id="download-button" href="assets/curriculum.pdf" download="curriculum.pdf">Descargar Mi Curriculum</a>
     </section>
 
     <section id="sobremi">
@@ -246,14 +74,14 @@
         <h2>Formación</h2>
         <div class="fila">
             <div class="card-container" name="Ingeniería">
-                <img class="card-img" src="ordenador_icono.png" alt="Informática">
+                <img class="card-img" src="assets/ordenador_icono.png" alt="Informática">
                 <div class="card-content">
                     <a href="https://esi.uclm.es/categories/plan-de-estudios">Grado en Ingeniería Informática</a>
                     <p><a href="https://esi.uclm.es/">Escuela Superior de Informática</a> de la <a href="https://www.uclm.es/">Universidad de Castilla La-Mancha</a></p>
                 </div>
             </div>
             <div class="card-container" name="Idioma">
-                <img class="card-img" src="idioma_icono.png" alt="Idioma">
+                <img class="card-img" src="assets/idioma_icono.png" alt="Idioma">
                 <div class="card-content">
                     <a href="https://www.cambridgeenglish.org/">B1 Preliminary en Inglés</a>
                     <p>
@@ -285,18 +113,15 @@
         <!-- Contenido de la sección de portfolio -->
     </section>
 
-    <footer id="contacto">
-        <pie>Contacto: johnatan.mora@alu.uclm.es | Teléfono: 684 145 002</pie>
+    <section id="contacto">
+        <p>Contacto: johnatan.mora@alu.uclm.es | Teléfono: 684 145 002</p>
+    </section>
+
+    <footer id="footer">
+        <pie>Johnatan Mora Pardo © 2023</pie>
     </footer>
 
-    <script>
-        function toggleNav() {
-            document.getElementById("mySidenav").style.width = (document.getElementById("mySidenav").style.width === "250px") ? "0" : "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
