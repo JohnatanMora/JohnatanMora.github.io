@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnatan Mora Pardo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"-->
     <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
@@ -16,12 +17,14 @@
     </header-->
 
 
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#inicio">Inicio</a>
               </li>
@@ -35,7 +38,7 @@
                 <a class="nav-link" href="#conocimientos">Conocimientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Aptitudes">Aptitudes</a>
+                <a class="nav-link" href="#aptitudes">Aptitudes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -44,8 +47,9 @@
                 <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <section id="inicio" class="mt-5">
         <p>Johnatan Mora Pardo</p>
@@ -57,39 +61,130 @@
 
     <section id="sobremi">
         <h2>Sobre Mí</h2>
-        <p>Hola, soy Johnatan. Durante mi vida siempre me ha apasionado la tecnología, sobre todo los ordenadores y los dispositivos
-             móviles. A menudo, he intentado aprender más de cómo funcionan dichos dispositivos, incluso desde muy pequeño ya me 
-             preguntaba: "¿Cómo pueden hacer estas cosas los aparatos?".</p>
-        <p>Por otro lado, además de estar estudiando el Grado de Ingeniería Informática, soy muy apasionado del pádel. Por ello, 
-            en mis tiempos libres, aparte de practicarlo, me he formado bastante en este área, teniendo ya varios títulos oficiales. 
-            Los títulos que tengo son: Árbitro de la Federación Española de Pádel, Árbitro de la Federación Andaluza de Pádel y 
-            Monitor de Pádel, de la escuela de Carlos Parente.</p>
-        <p>En todo este tiempo también he desarrollado muchas habilidades humanas que mejoran mi forma de trabajar, tanto solo 
-            como con un equipo, con los numeros trabajos y prácticas que hacemos en grupo durante el Grado. Además, habiendo trabajado
-            ya de monitor de pádel, he obtenido también algo de experiencia y de como intentar manejar las dificultades que se pueden 
-            presentar durante el trabajo (aunque obviamente no esté relacionado con la informática).</p>
+        <div class="row">
+            <div class="col-md-9">
+                <p>Hola, soy Johnatan Mora Pardo.</p>
+                <ul class="theme-list">
+                    <li><b>Nacido en:</b> Calzada de Calatrava, Ciudad Real, Castilla-La Mancha</li>
+                    <li><b>Fecha de nacimiento:</b> 26 de marzo de 2002</li>
+                    <li><b>Vivo en:</b> Ciudad Real</li>
+                    <li><b>Edad:</b> 21</li>
+                </ul>
+                <p>Soy un estudiante de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real, de la Universidad de Castilla La-Mancha. 
+                    Actualmente, estoy en el último año de carrera y me encuentro en búsqueda activa de prácticas en empresas para poder 
+                    desarrollar mis conocimientos y habilidades en un entorno profesional.</p>
+                <p>Durante mi vida siempre me ha apasionado la tecnología. Mi enfoque no solo se centra en entender 
+                    cómo funcionan los ordenadores y dispositivos, sino en cómo estas tecnologías pueden ser herramientas poderosas para 
+                    solucionar los problemas y mejorar la vida de las personas.</p>
+                <p>Por otro lado, además de estar estudiando el Grado de Ingeniería Informática, soy muy apasionado del pádel. Por ello, 
+                    en mis tiempos libres, aparte de practicarlo, me he formado bastante en este área, teniendo ya varios títulos oficiales. 
+                    Los títulos que tengo son: Árbitro de la Federación Española de Pádel, Árbitro de la Federación Andaluza de Pádel y 
+                    Monitor de Pádel, de la escuela de Carlos Parente.</p>
+                <p>Durante este período, he desarrollado diversas habilidades que enriquecen mi desempeño tanto en proyectos individuales 
+                    como en colaboración con equipos. Mi participación en numerosos trabajos y prácticas grupales durante el grado ha 
+                    fortalecido mi capacidad para trabajar de manera efectiva en entornos colaborativos. Además, mi experiencia laboral como 
+                    monitor de pádel me ha aportado ciertas habulidades para poder gestionar los diferentes problemas que pueden aparecer cuando 
+                    estás trabajando. Aunque este rol no esté directamente relacionado con la informática, ha contribuido a mi crecimiento 
+                    profesional al brindarme una perspectiva única y habilidades que complementan mi formación técnica.</p>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+                <img src="assets/mifoto.png" class="img-fluid" alt="Foto de perfil de Johnatan Mora Pardo">
+            </div>
+        </div>
+        
     </section>
 
     <section id="formacion">
         <h2>Formación</h2>
-        <div class="fila">
-            <div class="card-container" name="Ingeniería">
-                <img class="card-img" src="assets/ordenador_icono.png" alt="Informática">
-                <div class="card-content">
-                    <a href="https://esi.uclm.es/categories/plan-de-estudios">Grado en Ingeniería Informática</a>
-                    <p><a href="https://esi.uclm.es/">Escuela Superior de Informática</a> de la <a href="https://www.uclm.es/">Universidad de Castilla La-Mancha</a></p>
-                </div>
+        <div class="container pt-5">
+            <div class="row">
+              <div class="col-md-6 wow fadeInRight">
+                <h3 class="fw-normal">Educación</h3>
+                <ul class="timeline mt-4 pr-md-5">
+                  <li>
+                    <div class="title">2020 - Actualidad</div>
+                    <div class="details">
+                      <h5>Grado en Ingeniería Informática</h5>
+                      <small class="fg-theme">Universidad de Castilla-La Mancha (UCLM)</small>
+                      <p>Terminando el grado en Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real, en la Universidad 
+                        de Castilla-La Mancha. Especializándome en la intensificación de Tecnologías de la Información.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">2018 - 2020</div>
+                    <div class="details">
+                      <h5>Bachillerato de Ciencias</h5>
+                      <small class="fg-theme">IES Eduardo Valencia</small>
+                      <p>En el IES Eduardo Valencia, cursé el bachillerato de Ciencias, donde adquirí una base sólida en disciplinas clave como matemáticas, 
+                        física, TIC..., para ir bien preparado a la Evaluación para el Acceso a la Univerdad (EvAU) y a la universidad.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">2017</div>
+                    <div class="details">
+                      <h5>Nivel B1 en Inglés</h5>
+                      <small class="fg-theme">Cambridge Assessment English</small>
+                      <p>Obtención del certificado del nivel B1 Preliminary (PET) en Inglés, por Cambridge Assessment English</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+                <h3 class="fw-normal">Otros títulos</h3>
+                <ul class="timeline mt-4 pr-md-5">
+                  <li>
+                    <div class="title">2022 - 2023</div>
+                    <div class="details">
+                      <h5>Juez Árbitro de Pádel</h5>
+                      <small class="fg-theme">Federación Española de Pádel (FEP)</small>
+                      <p>Obtención del título de Juez Árbitro de Pádel, por la Federación Española de Pádel. Este título me permite arbitrar cualquier
+                        competición, campeonato o torneo de pádel organizado por la Federación Española de Pádel (FEP).</p>
+                      </p>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">2022 - 2023</div>
+                    <div class="details">
+                      <h5>Juez Árbitro de Pádel</h5>
+                      <small class="fg-theme">Federación Andaluza de Pádel (FAP)</small>
+                      <p>Obtención del título de Juez Árbitro de Pádel, por la Federación Andaluza de Pádel. Este título me permite arbitrar cualquier
+                        competición, campeonato o torneo de pádel organizado por la Federación Andaluza de Pádel (FAP)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">2021 - 2022</div>
+                    <div class="details">
+                      <h5>Monitor de Pádel</h5>
+                      <small class="fg-theme">Escuela Carlos Parente Ramírez</small>
+                      <p>Obtención del título de monitor de pádel, en la Escuela de Carlos Parente Ramírez, realizando las prácticas en el Club Realpadel.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 mx-auto" data-wow-delay="200ms">
+                <h3 class="fw-normal">Experiencia Profesional</h3>
+                <ul class="timeline mt-4 pr-md-5">
+                  <li>
+                    <div class="title">2023</div>
+                    <div class="details">
+                      <h5>Juez Árbitro de Pádel</h5>
+                      <small class="fg-theme">Federación Andaluza de Pádel (FAP)</small>
+                      <p>Arbitraje en el Campeonato de Andalucía de Menores por parejas de 35* y en el Campeonato por Equipos de 3ª Categoría.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">2021 - 2022</div>
+                    <div class="details">
+                      <h5>Monitor de Pádel</h5>
+                      <small class="fg-theme">Club Realpadel</small>
+                      <p>Realización de prácticas de monitor de pádel y, posteriormente, empleado como monitor de pádel sin estar en prácticas.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card-container" name="Idioma">
-                <img class="card-img" src="assets/idioma_icono.png" alt="Idioma">
-                <div class="card-content">
-                    <a href="https://www.cambridgeenglish.org/">B1 Preliminary en Inglés</a>
-                    <p>
-                        Nivel B1 de inglés dentro del Marco Común Europeo de Referencia por 
-                        <a href="https://www.cambridgeenglish.org/">Cambridge English Assessment</a>
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
     </section>
 
@@ -103,25 +198,44 @@
         <!-- Contenido de la sección de aptitudes -->
     </section>
 
-    <section id="idiomas">
-        <h2>Idiomas</h2>
-        <!-- Contenido de la sección de idiomas -->
-    </section>
-
     <section id="portfolio">
         <h2>Portfolio</h2>
         <!-- Contenido de la sección de portfolio -->
     </section>
 
     <section id="contacto">
-        <p>Contacto: johnatan.mora@alu.uclm.es | Teléfono: 684 145 002</p>
+        <h2>Contacto</h2>
+        <p>¡Estoy emocionado por la posibilidad de colaborar contigo! Si estás interesado en mi perfil o tienes alguna pregunta, no dudes en contactarme.</p>
+    
+        <div class="contacto-info">
+            <p><strong>Correo Electrónico:</strong> johnatan.mora@alu.uclm.es</p>
+            <p><strong>Teléfono:</strong> 684 145 002</p>
+        </div>
+    
+        <div class="formulario-contacto" action="enviar_formulario.php" method="post">
+            <h3>Envíame un mensaje</h3>
+            <form action="tu_script_de_envio.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
     </section>
+    
 
     <footer id="footer">
         <pie>Johnatan Mora Pardo © 2023</pie>
     </footer>
 
     <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

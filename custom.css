@@ -146,6 +146,117 @@ footer {
     justify-content: space-between;
 }
 
+/* Estilos para la sección de contacto */
+#contacto {
+    padding: 20px;
+    margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.contacto-info {
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.formulario-contacto h3 {
+    margin-bottom: 10px;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timeline {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 2px;
+    height: 95%;
+    background-color: #e3e5e9;
+  }
+  
+  .timeline li {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .timeline li::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    width: 18px;
+    height: 18px;
+    background-color: #747474;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .timeline li .title {
+    width: 165px;
+    padding: 6px 20px;
+    background-color: #747474;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px 0 60px 30px;
+  }
+  
+  .timeline li .details {
+    background-color: #f4f5f8;
+    margin-top: 8px;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .timeline li .details h5,
+  .timeline li .details p {
+    margin-bottom: 0;
+  }
+  
+  .timeline li .details small {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+
 /* Estilo adicional para el título de la sección de formación */
 #formacion h2 {
     margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
