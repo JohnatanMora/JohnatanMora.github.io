@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
@@ -35,10 +37,7 @@
                 <a class="nav-link" href="#formacion">Formación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#conocimientos">Conocimientos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#aptitudes">Aptitudes</a>
+                <a class="nav-link" href="#habilidades">Habilidades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -51,12 +50,21 @@
         </div>
       </nav>
 
-    <section id="inicio" class="mt-5">
-        <p>Johnatan Mora Pardo</p>
-        <p>Ingeniero Informático</p>
-        <p>Intensificación: Tecnologías de la Información</p>
-        <p>¡Bienvenido a mi página! Soy Johnatan Mora Pardo, un apasionado estudiante de Ingeniería Informática en busca de oportunidades para aplicar mis conocimientos y habilidades en un entorno profesional. Estoy comprometido con el aprendizaje continuo y la resolución creativa de problemas. ¡Explora mi perfil y descarga mi currículum para conocer más sobre mí!</p>
-        <a id="download-button" href="assets/curriculum.pdf" download="curriculum.pdf">Descargar Mi Curriculum</a>
+    <section id="inicio" class="mt-5 with-background">
+        <div class="row justify-content-center align-items-center h-100 w-100">
+            <div id="div-inicio" class="col-12 text-center with-background">
+                <h1>Johnatan Mora Pardo</h1>
+                <p class="d-none d-md-block">Ingeniero Informático</p>
+                <p class="d-none d-md-block">Intensificación: Tecnologías de la Información</p>
+                <p class="d-none d-md-block">¡Bienvenido a mi página! Soy Johnatan, un apasionado estudiante de Ingeniería Informática en busca de oportunidades laborales
+                    para aplicar mis conocimientos y habilidades en un entorno profesional. ¡Explora mi perfil y descarga mi currículum para conocer más sobre mí!</p>
+                
+                <p class="d-md-none">Ingeniero Informático</p>
+                <p class="d-md-none">Intensificación: Tecnologías de la Información</p>
+                <p class="d-md-none">¡Bienvenido a mi página! Explora mi perfil y descarga mi currículum para conocer más sobre mí.</p>
+                <a id="download-button" href="assets/curriculum.pdf" download="curriculum.pdf">Descargar Mi Curriculum</a>
+            </div>
+        </div>
     </section>
 
     <section id="sobremi">
@@ -70,25 +78,27 @@
                     <li><b>Vivo en:</b> Ciudad Real</li>
                     <li><b>Edad:</b> 21</li>
                 </ul>
-                <p>Soy un estudiante de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real, de la Universidad de Castilla La-Mancha. 
-                    Actualmente, estoy en el último año de carrera y me encuentro en búsqueda activa de prácticas en empresas para poder 
-                    desarrollar mis conocimientos y habilidades en un entorno profesional.</p>
+                <p>Soy un estudiante de Ingeniería Informática en la <a href="https://esi.uclm.es/">Escuela Superior de Informática de Ciudad Real</a>, 
+                    de la <a href="https://www.uclm.es/">Universidad de Castilla-La Mancha</a>. Actualmente, estoy en el último año de carrera y 
+                    me encuentro en búsqueda activa de prácticas en empresas para poder desarrollar mis conocimientos y habilidades en un 
+                    entorno profesional.</p>
                 <p>Durante mi vida siempre me ha apasionado la tecnología. Mi enfoque no solo se centra en entender 
                     cómo funcionan los ordenadores y dispositivos, sino en cómo estas tecnologías pueden ser herramientas poderosas para 
                     solucionar los problemas y mejorar la vida de las personas.</p>
                 <p>Por otro lado, además de estar estudiando el Grado de Ingeniería Informática, soy muy apasionado del pádel. Por ello, 
                     en mis tiempos libres, aparte de practicarlo, me he formado bastante en este área, teniendo ya varios títulos oficiales. 
-                    Los títulos que tengo son: Árbitro de la Federación Española de Pádel, Árbitro de la Federación Andaluza de Pádel y 
-                    Monitor de Pádel, de la escuela de Carlos Parente.</p>
+                    Los títulos que tengo son: Juez Árbitro de la <a href="https://www.padelfederacion.es/Home">Federación Española de Pádel</a>, 
+                    Juez Árbitro de la <a href="https://www.fap.es/">Federación Andaluza de Pádel</a> y Monitor de Pádel, de la escuela de 
+                    <a href="https://es.linkedin.com/in/carlos-parente-ramirez-345544200">Carlos Parente</a>.</p>
                 <p>Durante este período, he desarrollado diversas habilidades que enriquecen mi desempeño tanto en proyectos individuales 
                     como en colaboración con equipos. Mi participación en numerosos trabajos y prácticas grupales durante el grado ha 
                     fortalecido mi capacidad para trabajar de manera efectiva en entornos colaborativos. Además, mi experiencia laboral como 
-                    monitor de pádel me ha aportado ciertas habulidades para poder gestionar los diferentes problemas que pueden aparecer cuando 
+                    monitor de pádel me ha aportado ciertas habilidades para poder gestionar los diferentes problemas que pueden aparecer cuando 
                     estás trabajando. Aunque este rol no esté directamente relacionado con la informática, ha contribuido a mi crecimiento 
                     profesional al brindarme una perspectiva única y habilidades que complementan mi formación técnica.</p>
             </div>
             <div class="col-md-3 d-flex align-items-center">
-                <img src="assets/mifoto.png" class="img-fluid" alt="Foto de perfil de Johnatan Mora Pardo">
+                <img src="assets/mifoto.png" class="img-fluid mx-auto" alt="Foto de perfil de Johnatan Mora Pardo">
             </div>
         </div>
         
@@ -96,7 +106,7 @@
 
     <section id="formacion">
         <h2>Formación</h2>
-        <div class="container pt-5">
+        <div class="container">
             <div class="row">
               <div class="col-md-6 wow fadeInRight">
                 <h3 class="fw-normal">Educación</h3>
@@ -188,19 +198,254 @@
         </div>
     </section>
 
-    <section id="conocimientos">
-        <h2>Conocimientos</h2>
-        <!-- Contenido de la sección de conocimientos -->
-    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Durante mi formación como ingeniero informático he adquirido diferentes aptitudes y conocimientos muy valiosos 
+            en el mundo de la informática.</p>
+        <!-- Contenido de la sección de habilidades -->
+        <section id="aptitudes">
+            <div class="container">
+                <div class="row text-md-start mb-md-5 mb-2">
+                    <h3>Aptitudes</h3>
+                    <p>Algunas de las aptitudes fundamentales que he desarrollado durante el grado han sido:</p>
+                </div>
+                <div class="row pt-0">
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/autoaprendizaje.png" class="d-block mx-auto" alt="Autoaprendizaje">
+                        <h5 class="aptitudes-texto text-center">Autoaprendizaje</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/comunicacion.png" class="d-block mx-auto" alt="Comunicación">
+                        <h5 class="aptitudes-texto text-center">Comunicación</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/liderazgo.png" class="d-block mx-auto" alt="Liderazgo">
+                        <h5 class="aptitudes-texto text-center">Liderazgo</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/organizacion.png" class="d-block mx-auto" alt="Organización">
+                        <h5 class="aptitudes-texto text-center">Organización</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/trabajador.png" class="d-block mx-auto" alt="Trabajador">
+                        <h5 class="aptitudes-texto text-center">Trabajador</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/trabajo_en_equipo.png" class="d-block mx-auto" alt="Trabajo en Equipo">
+                        <h5 class="aptitudes-texto text-center">Trabajo en Equipo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-md-start mb-md-5 mb-2">
+                    <p>Otras aptitudes fundamentales adquiridas durante la carrera y, también, como monitor y juez árbitro de pádel son:</p>
+                </div>
+                <div class="row pt-0">
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/adaptabilidad.png" class="d-block mx-auto" alt="Adaptabilidad">
+                        <h5 class="aptitudes-texto text-center">Adaptabilidad</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/etica.png" class="d-block mx-auto" alt="Ética">
+                        <h5 class="aptitudes-texto text-center">Ética</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/iniciativa.png" class="d-block mx-auto" alt="Iniciativa">
+                        <h5 class="aptitudes-texto text-center">Iniciativa</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/responsabilidad.png" class="d-block mx-auto" alt="Responsabilidad">
+                        <h5 class="aptitudes-texto text-center">Responsabilidad</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/toma_decisiones.png" class="d-block mx-auto" alt="Toma de Decisiones">
+                        <h5 class="aptitudes-texto text-center">Toma de Decisiones</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2 icon-box">
+                        <img src="assets/trabajo_bajo_presion.png" class="d-block mx-auto" alt="Trabajo bajo presión">
+                        <h5 class="aptitudes-texto text-center">Trabajo bajo presión</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="aptitudes">
-        <h2>Aptitudes</h2>
-        <!-- Contenido de la sección de aptitudes -->
+        <section id="tecnologias">
+            <div class="row mt-md-4">
+                <div class="col-md-4">
+                    <div class="technology-box">
+                        <div class="technology-header">Lenguajes de Programación</div>
+
+                        <div class="technology-image icon-box">
+                            <b>Java</b>
+                            <img src="assets/java.png" alt="Java">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>Python</b>
+                            <img src="assets/python.png" alt="Python">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>C++</b>
+                            <img src="assets/c++.png" alt="C++">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>C#</b>
+                            <img src="assets/csharp.png" alt="C#">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>VB .net</b>
+                            <img src="assets/visual_basic.png" alt="Visual Basic">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>R</b>
+                            <img src="assets/r.png" alt="R">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>MATLAB</b>
+                            <img src="assets/mathlab.png" alt="MATLAB">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="technology-box">
+                        <div class="technology-header">WEB</div>
+
+                        <div class="technology-image icon-box">
+                            <b>HTML</b>
+                            <img src="assets/html.png" alt="HTML">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>CSS</b>
+                            <img src="assets/css.png" alt="CSS">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>JS</b>
+                            <img src="assets/js.png" alt="JS">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>PHP</b>
+                            <img src="assets/php.png" alt="PHP">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="technology-box">
+                        <div class="technology-header">Entornos de Desarrollo</div>
+                        
+                        <div class="technology-image icon-box">
+                            <b>Eclipse</b>
+                            <img src="assets/eclipse.png" alt="Eclipse">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>Visual Studio</b>
+                            <img src="assets/visual_studio.png" alt="Visual Studio">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>Visual Studio Code</b>
+                            <img src="assets/visual_studio_code.png" alt="Visual Studio Code">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="row mt-md-1 justify-content-center">
+                <div class="col-md-4">
+                    <div class="technology-box">
+                        <div class="technology-header">Frameworks</div>
+                        <div class="technology-image icon-box">
+                            <b>Angular</b>
+                            <img src="assets/angular.png" alt="Angular">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>WPF</b>
+                            <img src="assets/wpf.png" alt="WPF">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>Spring</b>
+                            <img src="assets/spring.png" alt="Spring">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>Bootstrap</b>
+                            <img src="assets/bootstrap.png" alt="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="technology-box">
+                        <div class="technology-header">Otras tecnologías</div>
+                        <div class="technology-image icon-box">
+                            <b>Bizagi</b>
+                            <img src="assets/bizagi.png" alt="Bizagi">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>MySQL</b>
+                            <img src="assets/mysql.png" alt="MySQL">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>GitHub</b>
+                            <img src="assets/git.png" alt="Git">
+                        </div>
+                        <div class="technology-image icon-box">
+                            <b>Cisco PT</b>
+                            <img src="assets/Packet Tracer.png" alt="Cisco Packet Tracer">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
         <!-- Contenido de la sección de portfolio -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 seccion grayBckgr">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="assets/ESIGames.png" class="d-block mx-auto" alt="ESIGames">
+                            <h4>ESIGames</h4>
+                            <p>ESIGames es una aplicación realizada con python, que permite a los usuarios introducir su nombre y jugar a los 
+                                juegos que hay en el portal. Si hacen récord se almacenará su puntuación.</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="assets/IPOkemon.png" class="d-block mx-auto" alt="IPOkemon">
+                            <h4>IPOkemon</h4>
+                            <p>IPOkemon es una aplicación realizada con Visual Studio, basada en Pokemon, en la que hay varios pokemon, puedes 
+                                verlos en la Pokédex, puedes combatir contra ellos y puedes capturarlos.</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="assets/betgenius.png" class="d-block mx-auto" alt="BetGenius">
+                            <h4>BetGenius</h4>
+                            <p>BetGenius es una aplicación realizada en python, en la que utilizamos dos APIs para predecir los resultados de los 
+                                partidos de fútbol y así poder apostar si quieres en ellos.</p>
+                            </p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="assets/topologia_dgr.png" class="d-block mx-auto" alt="Simulación Red Colegio con Packet Tracer">
+                            <h4>Simulación de la Red de un colegio con Packet Tracer</h4>
+                            <p>En este trabajo se intentó simular la red del colegio de Nuestra Señora de los Dolores Salesianas de Valdepeñas, con 
+                                Cisco Packet Tracer.</p>
+                        </div>
+                        <!-- Agrega más elementos .carousel-item según sea necesario -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
     </section>
 
     <section id="contacto">
