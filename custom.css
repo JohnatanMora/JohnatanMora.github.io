@@ -40,6 +40,12 @@ h3 {
     padding-top: 15px;
 }
 
+h4{
+    color: #00ba06;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 h5 {
     color: #0e164d;
     font-size: 20px;
@@ -234,6 +240,10 @@ footer {
     transform: scale(1.1); /* Slightly increase the size of the image */
 }
 
+span {
+    color: #006aff;
+}
+
 .grayBckgr{
     background-color: lightgray;
 }
@@ -252,7 +262,7 @@ footer {
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(203, 255, 201);
+    background-color: #cbffc9;
     border: 2px solid #ccc; /* Borde de 1 píxel sólido gris */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -288,6 +298,46 @@ footer {
 #projectCarousel {
     width: 100%;
     max-width: 100vw;
+}
+
+#projectCarousel a {
+    text-decoration: none;
+    color: inherit;;
+}
+
+#projectCarousel .carousel-control-prev,
+#projectCarousel .carousel-control-next {
+    width: 60px; /* Ajusta el ancho según sea necesario */
+    height: 60px; /* Ajusta la altura según sea necesario */
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-top: auto; /* Empuja los botones hacia abajo para centrarlos en altura */
+    margin-bottom: auto; /* Empuja los botones hacia arriba para centrarlos en altura */
+}
+
+#projectCarousel .visually-hidden {
+    font-size: 0; /* Oculta el texto "Anterior" y "Siguiente" visualmente */
+}
+
+
+#projectCarousel .carousel-control-prev-icon,
+#projectCarousel .carousel-control-next-icon {
+    width: 40px; /* Ajusta el ancho del ícono según sea necesario */
+    height: 40px; /* Ajusta la altura del ícono según sea necesario */
+    background-color: #333; /* Reemplaza "tu-color" con el color que desees */
+}
+
+/* Cambiar el color de las flechas al pasar el ratón sobre ellas */
+#projectCarousel .carousel-control-prev:hover,
+#projectCarousel .carousel-control-next:hover {
+    background-color: #6FFF2F; /* Reemplaza "tu-color-hover" con el color que desees al pasar el ratón */
+}
+
+.carousel-item:hover {
+    background-color: #cbffc9;
+}
+
+.carousel-item img{
+    margin-bottom: 30px;
 }
 
 
