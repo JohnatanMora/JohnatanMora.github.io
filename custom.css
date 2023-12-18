@@ -226,6 +226,14 @@ footer {
     height: 45px;
 }
 
+.bloque-aptitudes {
+    padding-bottom: 40px;
+}
+
+.aptitud:hover {
+    transform: scale(1.1); /* Slightly increase the size of the image */
+}
+
 .grayBckgr{
     background-color: lightgray;
 }
@@ -233,6 +241,43 @@ footer {
 .seccion {
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.titulo-tecnologias{
+    color: #00a906;
+}
+
+.grupo-tecnologias{
+    display: flex;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(203, 255, 201);
+    border: 2px solid #ccc; /* Borde de 1 píxel sólido gris */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    place-content: center;
+    justify-content: space-around;
+    position: relative;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.tecnologia img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tecnologia b {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tecnologia:hover {
+    transform: scale(1.1); /* Slightly increase the size of the image */
 }
 
 #projectCarousel img {
