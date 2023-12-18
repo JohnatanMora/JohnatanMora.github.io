@@ -306,7 +306,7 @@ span {
 
 #projectCarousel a {
     text-decoration: none;
-    color: inherit;;
+    color: inherit;
 }
 
 #projectCarousel .carousel-control-prev,
@@ -367,4 +367,18 @@ span {
 .activo {
     font-weight: bold;
     color: #4CAF50;
+}
+
+#redes-sociales a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item:hover a{
+    color: #6FFF2F;
+}
+
+#redes-sociales a:hover{
+    color: #6FFF2F;
 }
