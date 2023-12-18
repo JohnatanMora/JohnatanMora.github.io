@@ -3,7 +3,7 @@ body {
     margin: 20px;
     background-color: #ebebeb;
     color: #333;
-    overflow-x: hidden; /* Para ocultar la barra de desplazamiento horizontal cuando se muestra el menú lateral */
+    overflow-x: hidden;
     padding-top: 10px;
 }
 
@@ -78,11 +78,11 @@ footer {
 
 #inicio {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    flex-direction: column; /* Orienta los hijos en columna */
-    height: 100vh; /* Utiliza todo el alto de la ventana del navegador */
-    width: 100%; /* Utiliza todo el ancho de la ventana del navegador */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
 }
 
 #inicio.with-background {
@@ -114,7 +114,12 @@ footer {
 
 #contacto {
     padding: 20px;
-    margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+}
+
+#contacto p {
+    font-size: 20px;
 }
 
 .contacto-info {
@@ -124,7 +129,7 @@ footer {
 .formulario-contacto {
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 20px;
 }
 
 .formulario-contacto h3 {
@@ -159,9 +164,9 @@ footer {
     list-style: none;
     padding-left: 0;
     width: 100%;
-  }
+}
   
-  .timeline::before {
+.timeline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -171,17 +176,17 @@ footer {
     width: 2px;
     height: 95%;
     background-color: #256ad0;
-  }
+}
   
-  .timeline li {
+.timeline li {
     position: relative;
     display: block;
     padding-left: 30px;
     padding-bottom: 15px;
     margin-bottom: 20px;
-  }
+}
   
-  .timeline li::before {
+.timeline li::before {
     content: '';
     position: absolute;
     top: 8px;
@@ -191,44 +196,44 @@ footer {
     background-color: #0e164d;
     border: 3px solid #fff;
     border-radius: 50%;
-  }
+}
   
-  .timeline li .title {
+.timeline li .title {
     width: 165px;
     padding: 6px 20px;
     background-color: #0e164d;
     color: #fff;
     font-weight: 500;
     border-radius: 30px 0 60px 30px;
-  }
+}
   
-  .timeline li .details {
+.timeline li .details {
     background-color: #efefff;
     margin-top: 8px;
     padding: 20px;
     border-radius: 4px;
-  }
+}
   
-  .timeline li .details h5,
-  .timeline li .details p {
+.timeline li .details h5,
+.timeline li .details p {
     margin-bottom: 0;
-  }
+}
   
-  .timeline li .details small {
+.timeline li .details small {
     display: block;
     font-weight: 500;
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 10px;
     color: #1b4482;
-  }
+}
 
-  .timeline li .details p {
+.timeline li .details p {
     text-align: justify;
-  }
+}
 
 .icon-box img {
-    width: 45px; /* Ajusta el ancho del ícono según tus necesidades */
+    width: 45px;
     height: 45px;
 }
 
@@ -237,7 +242,7 @@ footer {
 }
 
 .aptitud:hover {
-    transform: scale(1.1); /* Slightly increase the size of the image */
+    transform: scale(1.1);
 }
 
 span {
@@ -263,13 +268,12 @@ span {
     padding: 20px;
     border-radius: 10px;
     background-color: #cbffc9;
-    border: 2px solid #ccc; /* Borde de 1 píxel sólido gris */
+    border: 2px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
     place-content: center;
     justify-content: space-around;
     position: relative;
-    margin: 20px auto;
     flex-wrap: wrap;
 }
 
@@ -287,11 +291,11 @@ span {
 }
 
 .tecnologia:hover {
-    transform: scale(1.1); /* Slightly increase the size of the image */
+    transform: scale(1.1);
 }
 
 #projectCarousel img {
-    width: 400px; /* Ajusta el ancho del ícono según tus necesidades */
+    width: 400px;
     height: 250px;
 }
 
@@ -307,29 +311,28 @@ span {
 
 #projectCarousel .carousel-control-prev,
 #projectCarousel .carousel-control-next {
-    width: 60px; /* Ajusta el ancho según sea necesario */
-    height: 60px; /* Ajusta la altura según sea necesario */
-    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
-    margin-top: auto; /* Empuja los botones hacia abajo para centrarlos en altura */
-    margin-bottom: auto; /* Empuja los botones hacia arriba para centrarlos en altura */
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #projectCarousel .visually-hidden {
-    font-size: 0; /* Oculta el texto "Anterior" y "Siguiente" visualmente */
+    font-size: 0;
 }
 
 
 #projectCarousel .carousel-control-prev-icon,
 #projectCarousel .carousel-control-next-icon {
-    width: 40px; /* Ajusta el ancho del ícono según sea necesario */
-    height: 40px; /* Ajusta la altura del ícono según sea necesario */
-    background-color: #333; /* Reemplaza "tu-color" con el color que desees */
+    width: 40px;
+    height: 40px;
+    background-color: #333;
 }
 
-/* Cambiar el color de las flechas al pasar el ratón sobre ellas */
 #projectCarousel .carousel-control-prev:hover,
 #projectCarousel .carousel-control-next:hover {
-    background-color: #6FFF2F; /* Reemplaza "tu-color-hover" con el color que desees al pasar el ratón */
+    background-color: #6FFF2F;
 }
 
 .carousel-item:hover {
@@ -340,15 +343,13 @@ span {
     margin-bottom: 30px;
 }
 
-
-/* Estilo adicional para el título de la sección de formación */
 #formacion h2 {
-    margin-bottom: 25px; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 25px;
 }
 
 #download-button {
     display: inline-block;
-    margin-top: 10px; /* Ajusta este valor según tus necesidades */
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -361,4 +362,9 @@ span {
 
 #download-button:hover {
     background-color: #45a049;
+}
+
+.activo {
+    font-weight: bold;
+    color: #4CAF50;
 }
