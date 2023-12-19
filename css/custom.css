@@ -73,21 +73,9 @@ footer {
 }
 
 #inicio {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
-}
-
-#inicio.with-background {
-    background-image: url('assets/fondo_inicio.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 20px;
 }
 
 #div-inicio p {
