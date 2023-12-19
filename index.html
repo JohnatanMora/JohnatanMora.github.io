@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnatan Mora Pardo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a7e191104b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="custom.css"-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1Q883FVJ1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S1Q883FVJ1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Johnatan Mora Pardo</title>
@@ -16,8 +17,8 @@
     <meta name="description" content="Página web personal de Johnatan Mora Pardo, estudiante del grado de Ingeniería Informática, de la intensificación de Tecnologías de la Información, en la Escuela Superior de Informática de Ciudad Real, de la Universidad de Castilla-La Mancha.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="custom.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/scripts.js"></script>
     
 </head>
 <body>
@@ -30,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarBoton" style="justify-content: left;">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="#inicio">Johnatan Mora Pardo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
@@ -51,8 +52,7 @@
             </div>
 
             <div id="redes-sociales" style="justify-content: right;">
-                <a href="https://www.instagram.com/jony502512" class="fab fa-instagram fa-2x" target="_blank"></a>
-                <a href="https://www.twitter.com/jony502512" class="fab fa-twitter fa-2x" target="_blank"></a>
+                <a id="instagram" href="https://www.instagram.com/jony502512" class="fab fa-instagram fa-2x" target="_blank"></a>
                 <a href="https://www.linkedin.com/in/johnatan-mora-pardo-4219652a4/" class="fab fa-linkedin-in fa-2x" target="_blank"></a>
                 <a href="https://www.github.com/JohnatanMora" class="fab fa-github fa-2x" target="_blank"></a>
             </div>
@@ -178,6 +178,14 @@
                       <p>Obtención del título de monitor de pádel, en la Escuela de Carlos Parente Ramírez, realizando las prácticas en el Club Realpadel.</p>
                     </div>
                   </li>
+                  <li>
+                    <div class="title">2021</div>
+                    <div class="details">
+                      <h5>Permiso B de Conducir</h5>
+                      <small class="fg-theme"><a href="https://yoelijoautoescuela.es/">Autoescuela Castellanos</a></small>
+                      <p>Obtención del permiso de conducir de tipo B, en la Autoescuela Castellanos de Ciudad Real.</p>
+                    </div>
+                  </li>
                 </ul>
               </div>
               <div class="col-md-6 mx-auto" data-wow-delay="200ms">
@@ -218,23 +226,23 @@
                     <p>Algunas de las aptitudes fundamentales que he desarrollado durante el grado han sido:</p>
                 </div>
                 <div class="row align-items-center bloque-aptitudes">
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box d-block mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box d-block mx-auto">
                         <img src="assets/autoaprendizaje.png" class="d-block mx-auto" alt="Autoaprendizaje">
                         <h5 class="aptitudes-texto text-center">Autoaprendizaje</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box d-block mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box d-block mx-auto">
                         <img src="assets/comunicacion.png" class="d-block mx-auto" alt="Comunicación">
                         <h5 class="aptitudes-texto text-center">Comunicación</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box d-block mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box d-block mx-auto">
                         <img src="assets/liderazgo.png" class="d-block mx-auto" alt="Liderazgo">
                         <h5 class="aptitudes-texto text-center">Liderazgo</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box d-block mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box d-block mx-auto">
                         <img src="assets/organizacion.png" class="d-block mx-auto" alt="Organización">
                         <h5 class="aptitudes-texto text-center">Organización</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box d-block mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box d-block mx-auto">
                         <img src="assets/trabajo_en_equipo.png" class="d-block mx-auto" alt="Trabajo en Equipo">
                         <h5 class="aptitudes-texto text-center">Trabajo en Equipo</h5>
                     </div>
@@ -245,23 +253,23 @@
                     <p>Otras aptitudes fundamentales adquiridas durante la carrera y, también, como monitor y juez árbitro de pádel son:</p>
                 </div>
                 <div class="row align-items-center bloque-aptitudes">
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box mx-auto">
                         <img src="assets/adaptabilidad.png" class="d-block mx-auto" alt="Adaptabilidad">
                         <h5 class="aptitudes-texto text-center">Adaptabilidad</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box mx-auto">
                         <img src="assets/etica.png" class="d-block mx-auto" alt="Ética">
                         <h5 class="aptitudes-texto text-center">Ética</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box mx-auto">
                         <img src="assets/iniciativa.png" class="d-block mx-auto" alt="Iniciativa">
                         <h5 class="aptitudes-texto text-center">Iniciativa</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box mx-auto">
                         <img src="assets/responsabilidad.png" class="d-block mx-auto" alt="Responsabilidad">
                         <h5 class="aptitudes-texto text-center">Responsabilidad</h5>
                     </div>
-                    <div class="aptitud col-6 col-md-4 col-xl-2 icon-box mx-auto">
+                    <div class="aptitud col-12 col-md-4 col-xl-2 icon-box mx-auto">
                         <img src="assets/toma_decisiones.png" class="d-block mx-auto" alt="Toma de Decisiones">
                         <h5 class="aptitudes-texto text-center">Toma de Decisiones</h5>
                     </div>
@@ -439,8 +447,7 @@
                                 <p>BetGenius es una aplicación realizada en python, en la que utilizamos dos APIs para predecir los resultados de los 
                                     partidos de fútbol y así poder apostar si quieres en ellos.</p>
                                 </p>
-                                <p><span>Tecnologías usadas: </span>Python</p>
-                                <p><span>APIs usadas: </span><a href="https://www.football-data.org/">Football Data</a>, <a href="https://core.telegram.org/bots/api">Telegram Bot API</a></p>
+                                <p><span>Tecnologías usadas: </span>Python, <a id="api" href="https://www.football-data.org/">Football Data</a>, <a id="api" href="https://core.telegram.org/bots/api">Telegram Bot API</a></p>
                                 <p><span>Integrantes del grupo: </span>Johnatan Mora Pardo, Raúl Moya Campillos y José Luis Nieto García-Carpintero</p>
                             </a>
 
@@ -456,17 +463,6 @@
                                 <p><span>Integrantes del grupo: </span>Marcos Isabel Lumbreras y Johnatan Mora Pardo</p>
                             </a>
                         </div>
-                        <div class="carousel-item text-center">
-                            <a href="https://github.com/JohnatanMora/TrabajoTeoricoDGR">
-                                <img src="assets/topologia_dgr.png" class="d-block mx-auto" alt="Simulación Red Colegio con Packet Tracer">
-                                <h4>Simulación de la Red de un colegio con Packet Tracer</h4>
-                                <p>En este trabajo se intentó simular la red del colegio de Nuestra Señora de los Dolores Salesianas de Valdepeñas, con 
-                                    Cisco Packet Tracer.</p>
-                                <p><span>Tecnologías usadas: </span>Cisco Packet Tracer</p>
-                                <p><span>Integrantes del grupo: </span>Carlos Almagro Rubio y Johnatan Mora Pardo</p>
-                            </a>
-                        </div>
-                        <!-- Agrega más elementos .carousel-item según sea necesario -->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -498,7 +494,15 @@
     
 
     <footer id="footer">
-        <pie>Johnatan Mora Pardo © Copyright 2023</pie>
+        <div id="redes-sociales" style="justify-content:center;">
+            <a id="instagram" href="https://www.instagram.com/jony502512" class="fab fa-instagram fa-2x" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/johnatan-mora-pardo-4219652a4/" class="fab fa-linkedin-in fa-2x" target="_blank"></a>
+            <a href="https://www.github.com/JohnatanMora" class="fab fa-github fa-2x" target="_blank"></a>
+        </div>
+        <div id="pie">
+            <p>Johnatan Mora Pardo © Copyright 2023</p>
+        </div>
+        
     </footer>
 
     <script src="scripts.js"></script>
